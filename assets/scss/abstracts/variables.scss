@@ -1,0 +1,83 @@
+//header
+$header-top-height-lg: 48px;
+$header-top-height-sm: 44px;
+$header-bottom-height-lg: 64px;
+$header-bottom-height-sm: 48px;
+$tourNav-height-lg: 64px;
+$tourNav-height-sm: 48px;
+
+$line-height: 1.6;
+$base-font-size: 16px;
+// primary
+$clr-primary: #333;
+// secondary
+$clr-secondary: #4985e6;
+$clr-secondary-bg-100: #f0f6f9;
+$color1: #fff;
+$color2: #3197ee;
+// success
+$clr-success: #e9f8f1;
+// error
+$clr-error: #fbf1f1;
+$clr-input-error: #f02c2c;
+
+// general
+$clr-light-orange: #fef3ed;
+$clr-yellow: #fff7ed;
+$clr-magnolia: #f7f0ff;
+
+// grey
+$clr-grey-100: #f5f5f5;
+$clr-grey-150: #eeeeee;
+$clr-grey-300: #9c9c9c;
+
+$clr-grey-200: #dadada;
+$clr-grey-250: #C5C2C2;
+$clr-grey-400: #888888;
+
+$clr-brand-color: #ff5722;
+$clr-font-base: #333;
+$clr-btn-hover: #dd4211;
+$clr-font-dark: #333;
+$clr-font: #333;
+
+// brown
+$clr-brown: #333333;
+// green
+$clr-green: #16AA77;
+
+$gutter-width: 1.5rem;
+$outer-margin: 1.5rem;
+$gutter-compensation: calc(((#{$gutter-width}) * 0.5) * -1);
+$half-gutter-width: calc(((#{$gutter-width}) * 0.5));
+$xs-min: 30;
+$sm-min: 48;
+$md-min: 64;
+$lg-min: 75;
+$screen-xs-min: ($xs-min)+em;
+$screen-sm-min: ($sm-min)+em;
+$screen-md-min: ($md-min)+em;
+$screen-lg-min: ($lg-min)+em;
+$container-sm: calc((#{$sm-min}) + (#{$gutter-width}));
+$container-md: calc((#{$md-min}) + (#{$gutter-width}));
+$container-lg: calc((#{$lg-min}) + (#{$gutter-width}));
+
+$break_xl: 1256px;
+$break_lg: 1199px;
+$break_md: 991px;
+$break_sm: 767px;
+$break_s: 480px;
+
+// fonts
+// montserrat
+$Montserrat-Reg: "Montserrat-Reg", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Ubuntu",
+sans-serif;
+$Montserrat-Bold: "Montserrat-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Ubuntu",
+sans-serif;
+$Montserrat-Semi-Bold: "Montserrat-Semi-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue",
+"Ubuntu", sans-serif;
+// open-sans
+$Open-Sans-Reg: "Open-Sans-Reg", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Ubuntu",
+sans-serif;
+$Open-Sans-Semi-Bold: "Open-Sans-Semi-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue",
+"Ubuntu", sans-serif;
