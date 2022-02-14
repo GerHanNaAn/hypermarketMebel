@@ -34,19 +34,20 @@ export const actions = {
 
 	async uploadPhoto({ commit }, form) {
 		try {
-			const response = await this.$axios.post(
+			const { data, status } = await this.$axios.post(
 				// Имитация успешной загрузки изображения и ифнормации к нему
 				'https://jsonplaceholder.typicode.com/posts',
-				form
+				'fake data'
 			)
 
-			const photo = await this.$axios.get(
-				`https://picsum.photos/id/${Math.round(
-					Math.random() * 101
-				)}/info`
-			)
+			if (status === 201) {
+				const photo = {
+					download_url: window.URL.createObjectURL(form.get('file')),
+					author: form.get('author'),
+				}
 
-			commit('ADD_PHOTO', photo.data)
+				commit('ADD_PHOTO', photo)
+			}
 		} catch (err) {
 			console.log(err)
 		}
